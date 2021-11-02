@@ -1,5 +1,6 @@
 virtual/
-
-
  *.pyc  
 #files created when a python file is imported are called   *.pyc
+
+instance/
+

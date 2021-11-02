@@ -1,29 +1,26 @@
-class config:
+class Config:
     '''
-    this is a general configuration class
+    General configuration parent class
     '''
-    pass
+    # use the {} to represent sections in the URL that will be replaced with actual values
+    MOVIE_API_BASE_URL ='https://api.themoviedb.org/3/movie/{}?api_key={}'
 
 
 class ProdConfig(Config):
-    
     '''
-    production configuration child class
+    Production  configuration child class
 
     Args:
-        config:The parent configuration class with general configuration settings
+        Config: The parent configuration class with General configuration settings
     '''
     pass
 
 
 class DevConfig(Config):
     '''
-    development configuration child class
+    Development  configuration child class
+
     Args:
-     config:The parent configuration class with general configuration settings
+        Config: The parent configuration class with General configuration settings
     '''
-    pass
-
     DEBUG = True
-    
-
